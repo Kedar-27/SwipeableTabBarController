@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40463B0D119F5AA8A93A8CF6 /* Pods_SwipeableTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EEEC5133E15456BFAC8C5 /* Pods_SwipeableTabBarController.framework */; };
+		97400C5E237406AD00514FBE /* KPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C5D237406AD00514FBE /* KPageViewController.swift */; };
+		97400C61237407C500514FBE /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97400C60237407C400514FBE /* TabBarController.storyboard */; };
+		97400C632374081C00514FBE /* STCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C622374081C00514FBE /* STCTabBarController.swift */; };
+		97400C6B2374197900514FBE /* TextTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C692374197900514FBE /* TextTVC.swift */; };
+		97400C6C2374197900514FBE /* TextTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97400C6A2374197900514FBE /* TextTVC.xib */; };
+		975F9C692373FBB30074704F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F9C682373FBB30074704F /* AppDelegate.swift */; };
+		975F9C702373FBB30074704F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975F9C6E2373FBB30074704F /* Main.storyboard */; };
+		975F9C722373FBB80074704F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975F9C712373FBB80074704F /* Assets.xcassets */; };
+		975F9C752373FBB80074704F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975F9C732373FBB80074704F /* LaunchScreen.storyboard */; };
+		975F9C802373FDD40074704F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F9C7F2373FDD40074704F /* MainVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E70F593E1432836A5501EDA /* Pods-SwipeableTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeableTabBarController.debug.xcconfig"; path = "Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		97400C5D237406AD00514FBE /* KPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPageViewController.swift; sourceTree = "<group>"; };
+		97400C60237407C400514FBE /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		97400C622374081C00514FBE /* STCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCTabBarController.swift; sourceTree = "<group>"; };
+		97400C692374197900514FBE /* TextTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTVC.swift; sourceTree = "<group>"; };
+		97400C6A2374197900514FBE /* TextTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTVC.xib; sourceTree = "<group>"; };
+		975F9C652373FBB30074704F /* SwipeableTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		975F9C682373FBB30074704F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		975F9C6F2373FBB30074704F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		975F9C712373FBB80074704F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		975F9C742373FBB80074704F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		975F9C762373FBB80074704F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975F9C7F2373FDD40074704F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		DCEE3300F71EDDF9521F9DAF /* Pods-SwipeableTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeableTabBarController.release.xcconfig"; path = "Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController.release.xcconfig"; sourceTree = "<group>"; };
+		E67EEEC5133E15456BFAC8C5 /* Pods_SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		975F9C622373FBB30074704F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40463B0D119F5AA8A93A8CF6 /* Pods_SwipeableTabBarController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642EB5017A656F3A158EA33F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E70F593E1432836A5501EDA /* Pods-SwipeableTabBarController.debug.xcconfig */,
+				DCEE3300F71EDDF9521F9DAF /* Pods-SwipeableTabBarController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		97400C582374040E00514FBE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				97400C60237407C400514FBE /* TabBarController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		97400C592374041900514FBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97400C622374081C00514FBE /* STCTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97400C5C2374068E00514FBE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				97400C5D237406AD00514FBE /* KPageViewController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		97400C642374088000514FBE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		97400C652374088900514FBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97400C662374191700514FBE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97400C692374197900514FBE /* TextTVC.swift */,
+				97400C6A2374197900514FBE /* TextTVC.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		975F9C5C2373FBB30074704F = {
+			isa = PBXGroup;
+			children = (
+				975F9C672373FBB30074704F /* SwipeableTabBarController */,
+				975F9C662373FBB30074704F /* Products */,
+				642EB5017A656F3A158EA33F /* Pods */,
+				EBB9B71DD4290664439D0BD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		975F9C662373FBB30074704F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				975F9C652373FBB30074704F /* SwipeableTabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		975F9C672373FBB30074704F /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				975F9C682373FBB30074704F /* AppDelegate.swift */,
+				975F9C81237402A70074704F /* MainController */,
+				975F9C7E2373FD9F0074704F /* TabBarController */,
+				975F9C7D2373FD910074704F /* MaterialTabs */,
+				97400C5C2374068E00514FBE /* Helper */,
+				975F9C712373FBB80074704F /* Assets.xcassets */,
+				975F9C6E2373FBB30074704F /* Main.storyboard */,
+				975F9C732373FBB80074704F /* LaunchScreen.storyboard */,
+				975F9C762373FBB80074704F /* Info.plist */,
+			);
+			path = SwipeableTabBarController;
+			sourceTree = "<group>";
+		};
+		975F9C7D2373FD910074704F /* MaterialTabs */ = {
+			isa = PBXGroup;
+			children = (
+				97400C652374088900514FBE /* Controllers */,
+				97400C642374088000514FBE /* Storyboard */,
+			);
+			path = MaterialTabs;
+			sourceTree = "<group>";
+		};
+		975F9C7E2373FD9F0074704F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				97400C592374041900514FBE /* Controllers */,
+				97400C582374040E00514FBE /* Storyboards */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		975F9C81237402A70074704F /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				97400C662374191700514FBE /* Cells */,
+				975F9C83237402C30074704F /* Controllers */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		975F9C83237402C30074704F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				975F9C7F2373FDD40074704F /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EBB9B71DD4290664439D0BD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E67EEEC5133E15456BFAC8C5 /* Pods_SwipeableTabBarController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		975F9C642373FBB30074704F /* SwipeableTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975F9C792373FBB80074704F /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
+			buildPhases = (
+				AAACE0D9DB889C10F519DA20 /* [CP] Check Pods Manifest.lock */,
+				975F9C612373FBB30074704F /* Sources */,
+				975F9C622373FBB30074704F /* Frameworks */,
+				975F9C632373FBB30074704F /* Resources */,
+				BB6C3795E9CD263BBED6F5E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = 975F9C652373FBB30074704F /* SwipeableTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		975F9C5D2373FBB30074704F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Kedar Sukerkar";
+				TargetAttributes = {
+					975F9C642373FBB30074704F = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 975F9C602373FBB30074704F /* Build configuration list for PBXProject "SwipeableTabBarController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 975F9C5C2373FBB30074704F;
+			productRefGroup = 975F9C662373FBB30074704F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				975F9C642373FBB30074704F /* SwipeableTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		975F9C632373FBB30074704F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975F9C752373FBB80074704F /* LaunchScreen.storyboard in Resources */,
+				975F9C722373FBB80074704F /* Assets.xcassets in Resources */,
+				97400C6C2374197900514FBE /* TextTVC.xib in Resources */,
+				97400C61237407C500514FBE /* TabBarController.storyboard in Resources */,
+				975F9C702373FBB30074704F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAACE0D9DB889C10F519DA20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeableTabBarController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6C3795E9CD263BBED6F5E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		975F9C612373FBB30074704F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97400C632374081C00514FBE /* STCTabBarController.swift in Sources */,
+				97400C6B2374197900514FBE /* TextTVC.swift in Sources */,
+				975F9C802373FDD40074704F /* MainVC.swift in Sources */,
+				975F9C692373FBB30074704F /* AppDelegate.swift in Sources */,
+				97400C5E237406AD00514FBE /* KPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		975F9C6E2373FBB30074704F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975F9C6F2373FBB30074704F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		975F9C732373FBB80074704F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975F9C742373FBB80074704F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		975F9C772373FBB80074704F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		975F9C782373FBB80074704F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		975F9C7A2373FBB80074704F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E70F593E1432836A5501EDA /* Pods-SwipeableTabBarController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DYQ3B3G4;
+				INFOPLIST_FILE = SwipeableTabBarController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.animations.SwipeableTabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		975F9C7B2373FBB80074704F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEE3300F71EDDF9521F9DAF /* Pods-SwipeableTabBarController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DYQ3B3G4;
+				INFOPLIST_FILE = SwipeableTabBarController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.animations.SwipeableTabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		975F9C602373FBB30074704F /* Build configuration list for PBXProject "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975F9C772373FBB80074704F /* Debug */,
+				975F9C782373FBB80074704F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975F9C792373FBB80074704F /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975F9C7A2373FBB80074704F /* Debug */,
+				975F9C7B2373FBB80074704F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 975F9C5D2373FBB30074704F /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_SwipeableTabBarController {
+  umbrella header "Pods-SwipeableTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}
