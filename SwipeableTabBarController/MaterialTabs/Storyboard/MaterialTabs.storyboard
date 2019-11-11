@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CDC-Ef-tvP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Material Tabs ParentVC-->
+        <scene sceneID="GZn-Zi-62I">
+            <objects>
+                <viewController storyboardIdentifier="STCMaterialTabsParentVC" id="CDC-Ef-tvP" customClass="STCMaterialTabsParentVC" customModule="SwipeableTabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qx8-UZ-VXa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKK-gZ-WGD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="89.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74c-Zv-oA8">
+                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.81568627449999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jKK-gZ-WGD" firstAttribute="centerX" secondItem="l4r-7Y-puK" secondAttribute="centerX" id="6Ry-Fu-GDY"/>
+                            <constraint firstItem="l4r-7Y-puK" firstAttribute="bottom" secondItem="74c-Zv-oA8" secondAttribute="bottom" id="OtL-WM-Jtl"/>
+                            <constraint firstItem="74c-Zv-oA8" firstAttribute="top" secondItem="jKK-gZ-WGD" secondAttribute="bottom" id="a1N-EN-4JB"/>
+                            <constraint firstItem="jKK-gZ-WGD" firstAttribute="top" secondItem="l4r-7Y-puK" secondAttribute="top" id="hXi-eL-OMn"/>
+                            <constraint firstItem="74c-Zv-oA8" firstAttribute="centerX" secondItem="jKK-gZ-WGD" secondAttribute="centerX" id="jtr-bO-drD"/>
+                            <constraint firstItem="jKK-gZ-WGD" firstAttribute="width" secondItem="qx8-UZ-VXa" secondAttribute="width" id="mSn-SF-oXO"/>
+                            <constraint firstItem="jKK-gZ-WGD" firstAttribute="height" secondItem="qx8-UZ-VXa" secondAttribute="height" multiplier="0.1" id="raw-1L-dn8"/>
+                            <constraint firstItem="74c-Zv-oA8" firstAttribute="width" secondItem="qx8-UZ-VXa" secondAttribute="width" id="sod-Kq-PUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l4r-7Y-puK"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="74c-Zv-oA8" id="uH2-SB-oQW"/>
+                        <outlet property="materialTabsView" destination="jKK-gZ-WGD" id="PT0-SC-fal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCw-nj-1b2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="-11"/>
+        </scene>
+        <!--Material TabsPVC-->
+        <scene sceneID="wdc-Ji-kXl">
+            <objects>
+                <pageViewController storyboardIdentifier="STCMaterialTabsPVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hRC-7R-rYN" customClass="STCMaterialTabsPVC" customModule="SwipeableTabBarController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7g-Q1-KWl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-11"/>
+        </scene>
+    </scenes>
+</document>

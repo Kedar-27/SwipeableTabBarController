@@ -1,5 +1,5 @@
 //
-//  STCTabBarController.swift
+//  STCMaterialTabsPVC.swift
 //  SwipeableTabBarController
 //
 //  Created by Kedar Sukerkar on 07/11/19.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class STCTabBarController: KTabBarController {
+class STCMaterialTabsPVC: KPageViewController {
 
     // MARK: - Constants
-    static let storyboardIdentifier = "STCTabBarController"
-    static let storyboardName       = "TabBarController"
+    static let storyboardIdentifier = "STCMaterialTabsPVC"
+    static let storyboardName       = "MaterialTabs"
     
     // MARK: - Outlets
     

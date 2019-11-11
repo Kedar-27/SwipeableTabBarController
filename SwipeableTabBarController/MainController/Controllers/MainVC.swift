@@ -9,7 +9,7 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
     // MARK: - Constants
     static let storyboardIdentifier = "MainVC"
     static let storyboardName       = "Main"
@@ -43,12 +43,11 @@ class MainVC: UIViewController {
     }
     
     func setupVC(){
-        
         self.categoryTableView.delegate = self
         self.categoryTableView.dataSource = self
-        self.categoryTableView.register(UINib(nibName: "TextTVC", bundle: nil), forCellReuseIdentifier: "TextTVC")
         
-       // self.title = "SwipeableTabBarController Demo"
+        
+        self.title = "SwipeableTabBarController Demo"
         
     }
     
@@ -64,9 +63,9 @@ class MainVC: UIViewController {
     }
     
     // MARK: - IBActions
-
     
-
+    
+    
     
 }
 
@@ -76,12 +75,14 @@ extension MainVC: UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TextTVC") as? TextTVC
         
-        cell?.titleLabel.text = self.categories[indexPath.row]
-        
-        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+
+        if( !(cell != nil)){
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+        }
+
+        cell!.textLabel?.text = self.categories[indexPath.row]
         return cell!
     }
     
@@ -92,21 +93,26 @@ extension MainVC: UITableViewDelegate , UITableViewDataSource{
             // tab bar
             let storyBoard = UIStoryboard(name: STCTabBarController.storyboardName, bundle: nil)
             let tabBarVC = storyBoard.instantiateViewController(withIdentifier: STCTabBarController.storyboardIdentifier ) as? STCTabBarController
-        
+            
             self.navigationController?.pushViewController(tabBarVC!, animated: true)
-    
+            
         }else if indexPath.row == 1{
             // material tabs
+            let storyBoard = UIStoryboard(name: STCMaterialTabsParentVC.storyboardName, bundle: nil)
+            let materialTabBarVC = storyBoard.instantiateViewController(withIdentifier: STCMaterialTabsParentVC.storyboardIdentifier ) as? STCMaterialTabsParentVC
             
+            self.navigationController?.pushViewController(materialTabBarVC!, animated: true)
             
             
             
         }
-  
+        
     }
     
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height * 0.1
+    }
     
     
     

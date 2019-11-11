@@ -6,8 +6,8 @@
 //  Copyright © 2019 Kedar Sukerkar. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import MaterialComponents.MaterialTabs
 
 protocol KPageViewControllerDelegate: AnyObject {
     func pageDidSwipe(to index: Int)
@@ -21,7 +21,9 @@ class KPageViewController: UIPageViewController {
     
     var pages = [UIViewController]()
     
-    var previousIndex: Int = 1
+    /// Indicates index position of current displayed controller
+    public var currentPage: Int = 0
+    
     
     
     // MARK: - UIViewController
@@ -30,8 +32,19 @@ class KPageViewController: UIPageViewController {
         super.viewDidLoad()
         self.dataSource = self
         self.delegate = self
+        
+    
+        
+        // For disabling bouncing effect
+        for subview in self.view.subviews {
+            if let scrollView = subview as? UIScrollView {
+                scrollView.delegate = self
+                break
+            }
+        }
     }
     
+    /// For selecting page of pageViewController
     func selectPage(at index: Int) {
         self.setViewControllers(
             [self.pages[index]],
@@ -39,11 +52,15 @@ class KPageViewController: UIPageViewController {
             animated: true,
             completion: nil
         )
-        self.previousIndex = index
+        self.currentPage = index
+        
+        self.view.layoutIfNeeded()
     }
     
+    
+    /// For getting direction of transition
     private func direction(for index: Int) -> UIPageViewController.NavigationDirection {
-        return index > self.previousIndex ? .forward : .reverse
+        return index > self.currentPage ? .forward : .reverse
     }
     
 }
@@ -75,9 +92,30 @@ extension KPageViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
             guard let currentPageIndex = self.viewControllers?.first?.view.tag else { return }
-            self.previousIndex = currentPageIndex
+            self.currentPage = currentPageIndex
             self.swipeDelegate?.pageDidSwipe(to: currentPageIndex)
         }
     }
     
 }
+
+extension KPageViewController: UIScrollViewDelegate{
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if (self.currentPage == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
+//        } else if (self.currentPage == self.pages.count - 1 && scrollView.contentOffset.x > scrollView.bounds.size.width) {
+//            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
+//        }
+//    }
+//
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//        if (self.currentPage == 0 && scrollView.contentOffset.x <= scrollView.bounds.size.width) {
+//            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
+//        } else if (self.currentPage == self.pages.count - 1 && scrollView.contentOffset.x >= scrollView.bounds.size.width) {
+//            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
+//        }
+//    }
+    
+    
+}
+

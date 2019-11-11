@@ -275,14 +275,14 @@
 		91AABC303AC3CDF11E918C7646816277 /* MDCTabBarIndicatorTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTabBarIndicatorTemplate.h; path = components/Tabs/src/MDCTabBarIndicatorTemplate.h; sourceTree = "<group>"; };
 		95CD7CDA1E08B2DDAFEA634D9E8E9268 /* MDCItemBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCItemBarStyle.m; path = components/Tabs/src/private/MDCItemBarStyle.m; sourceTree = "<group>"; };
 		98A442E0ADCD32C70DDA47E81A70B786 /* MDCRippleTouchController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRippleTouchController.h; path = components/Ripple/src/MDCRippleTouchController.h; sourceTree = "<group>"; };
-		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization.framework; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC90452831F3AF1EF852B49C41430B6 /* UIFont+MaterialScalable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialScalable.m"; path = "components/Typography/src/UIFont+MaterialScalable.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1835ECFF690A0FC2D068DAADD196BC /* UIColor+MaterialElevation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialElevation.m"; path = "components/Elevation/src/UIColor+MaterialElevation.m"; sourceTree = "<group>"; };
 		9EF40B78519898B8021C76D35DCEA017 /* NSLocale+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+MaterialRTL.m"; path = "Sources/NSLocale+MaterialRTL.m"; sourceTree = "<group>"; };
 		A009035C59217ED1C06B7A68F2657C30 /* UIView+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialRTL.m"; path = "Sources/UIView+MaterialRTL.m"; sourceTree = "<group>"; };
 		A162C0F0452E9E24CE8D659525F92FDC /* MDCFontScaler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFontScaler.m; path = components/Typography/src/MDCFontScaler.m; sourceTree = "<group>"; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E276A9735051E9A0F6E37E45DFAFC6 /* MDCItemBarStringConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCItemBarStringConstants.h; path = components/Tabs/src/private/MDCItemBarStringConstants.h; sourceTree = "<group>"; };
 		A453A3B1CF0505D6CB00C68AE5366B8D /* MDCRippleTouchController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRippleTouchController.m; path = components/Ripple/src/MDCRippleTouchController.m; sourceTree = "<group>"; };
 		A5277A3C6906E0B8BCD36700850BBE89 /* UIColor+MaterialBlending.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialBlending.h"; path = "components/private/Color/src/UIColor+MaterialBlending.h"; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		F28708E1DA9CC53C6B6B7A7F32441CEC /* MDCRippleLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRippleLayer.h; path = components/Ripple/src/private/MDCRippleLayer.h; sourceTree = "<group>"; };
 		F67DD2A77317EB25086D4DCA9B3A9F24 /* MDCFontTraits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFontTraits.m; path = components/Typography/src/private/MDCFontTraits.m; sourceTree = "<group>"; };
 		F6D2A7A365BAE2A3612B3457CF13F51D /* UIView+MDCTimingFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCTimingFunction.m"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.m"; sourceTree = "<group>"; };
-		F7CCDEAF251EADA9F41E5648851F227E /* Pods_SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwipeableTabBarController.framework; path = "Pods-SwipeableTabBarController.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CCDEAF251EADA9F41E5648851F227E /* Pods_SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C27AE9CF060ED3562DDD77341540C6 /* MDCShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShadowLayer.m; path = components/ShadowLayer/src/MDCShadowLayer.m; sourceTree = "<group>"; };
 		FDE5E90A8302FDAEB4352C092169C4F5 /* UIFont+MaterialTypographyPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialTypographyPrivate.m"; path = "components/Typography/src/private/UIFont+MaterialTypographyPrivate.m"; sourceTree = "<group>"; };
 		FEEDB7DA81D3C6C1E307B398505231AF /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
@@ -537,7 +537,6 @@
 				3E5404A3F2DB804FC31D3802BDFC6BCF /* Tabs */,
 				5857607E268876189BBF327BF28A028A /* Typography */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -594,7 +593,6 @@
 				A009035C59217ED1C06B7A68F2657C30 /* UIView+MaterialRTL.m */,
 				FFB5ED898C85F1FBFEF7001992720354 /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -897,6 +895,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = B1B161947B5C090F2FA00F393B3F1B3F /* Products */;

@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		40463B0D119F5AA8A93A8CF6 /* Pods_SwipeableTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EEEC5133E15456BFAC8C5 /* Pods_SwipeableTabBarController.framework */; };
+		970261B02379472600C7A2D3 /* STCMaterialTabsParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970261AF2379472600C7A2D3 /* STCMaterialTabsParentVC.swift */; };
+		970261D4237951E700C7A2D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970261D3237951E700C7A2D3 /* SceneDelegate.swift */; };
 		97400C5E237406AD00514FBE /* KPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C5D237406AD00514FBE /* KPageViewController.swift */; };
 		97400C61237407C500514FBE /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97400C60237407C400514FBE /* TabBarController.storyboard */; };
 		97400C632374081C00514FBE /* STCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C622374081C00514FBE /* STCTabBarController.swift */; };
-		97400C6B2374197900514FBE /* TextTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C692374197900514FBE /* TextTVC.swift */; };
-		97400C6C2374197900514FBE /* TextTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97400C6A2374197900514FBE /* TextTVC.xib */; };
+		97400C6E23741E0E00514FBE /* MaterialTabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97400C6D23741E0E00514FBE /* MaterialTabs.storyboard */; };
+		97400C7023741E5600514FBE /* STCMaterialTabsPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C6F23741E5600514FBE /* STCMaterialTabsPVC.swift */; };
+		97400C72237421D300514FBE /* KTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97400C71237421D300514FBE /* KTabBarController.swift */; };
 		975F9C692373FBB30074704F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F9C682373FBB30074704F /* AppDelegate.swift */; };
 		975F9C702373FBB30074704F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975F9C6E2373FBB30074704F /* Main.storyboard */; };
 		975F9C722373FBB80074704F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975F9C712373FBB80074704F /* Assets.xcassets */; };
@@ -22,11 +25,14 @@
 
 /* Begin PBXFileReference section */
 		5E70F593E1432836A5501EDA /* Pods-SwipeableTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeableTabBarController.debug.xcconfig"; path = "Target Support Files/Pods-SwipeableTabBarController/Pods-SwipeableTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		970261AF2379472600C7A2D3 /* STCMaterialTabsParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCMaterialTabsParentVC.swift; sourceTree = "<group>"; };
+		970261D3237951E700C7A2D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		97400C5D237406AD00514FBE /* KPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPageViewController.swift; sourceTree = "<group>"; };
 		97400C60237407C400514FBE /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		97400C622374081C00514FBE /* STCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCTabBarController.swift; sourceTree = "<group>"; };
-		97400C692374197900514FBE /* TextTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTVC.swift; sourceTree = "<group>"; };
-		97400C6A2374197900514FBE /* TextTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTVC.xib; sourceTree = "<group>"; };
+		97400C6D23741E0E00514FBE /* MaterialTabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaterialTabs.storyboard; sourceTree = "<group>"; };
+		97400C6F23741E5600514FBE /* STCMaterialTabsPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCMaterialTabsPVC.swift; sourceTree = "<group>"; };
+		97400C71237421D300514FBE /* KTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTabBarController.swift; sourceTree = "<group>"; };
 		975F9C652373FBB30074704F /* SwipeableTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		975F9C682373FBB30074704F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		975F9C6F2373FBB30074704F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				97400C5D237406AD00514FBE /* KPageViewController.swift */,
+				97400C71237421D300514FBE /* KTabBarController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -86,6 +93,7 @@
 		97400C642374088000514FBE /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				97400C6D23741E0E00514FBE /* MaterialTabs.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -93,17 +101,10 @@
 		97400C652374088900514FBE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97400C6F23741E5600514FBE /* STCMaterialTabsPVC.swift */,
+				970261AF2379472600C7A2D3 /* STCMaterialTabsParentVC.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		97400C662374191700514FBE /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				97400C692374197900514FBE /* TextTVC.swift */,
-				97400C6A2374197900514FBE /* TextTVC.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		975F9C5C2373FBB30074704F = {
@@ -128,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				975F9C682373FBB30074704F /* AppDelegate.swift */,
+				970261D3237951E700C7A2D3 /* SceneDelegate.swift */,
 				975F9C81237402A70074704F /* MainController */,
 				975F9C7E2373FD9F0074704F /* TabBarController */,
 				975F9C7D2373FD910074704F /* MaterialTabs */,
@@ -161,7 +163,6 @@
 		975F9C81237402A70074704F /* MainController */ = {
 			isa = PBXGroup;
 			children = (
-				97400C662374191700514FBE /* Cells */,
 				975F9C83237402C30074704F /* Controllers */,
 			);
 			path = MainController;
@@ -245,9 +246,9 @@
 			files = (
 				975F9C752373FBB80074704F /* LaunchScreen.storyboard in Resources */,
 				975F9C722373FBB80074704F /* Assets.xcassets in Resources */,
-				97400C6C2374197900514FBE /* TextTVC.xib in Resources */,
 				97400C61237407C500514FBE /* TabBarController.storyboard in Resources */,
 				975F9C702373FBB30074704F /* Main.storyboard in Resources */,
+				97400C6E23741E0E00514FBE /* MaterialTabs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,10 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				97400C632374081C00514FBE /* STCTabBarController.swift in Sources */,
-				97400C6B2374197900514FBE /* TextTVC.swift in Sources */,
+				970261B02379472600C7A2D3 /* STCMaterialTabsParentVC.swift in Sources */,
 				975F9C802373FDD40074704F /* MainVC.swift in Sources */,
+				97400C72237421D300514FBE /* KTabBarController.swift in Sources */,
 				975F9C692373FBB30074704F /* AppDelegate.swift in Sources */,
+				97400C7023741E5600514FBE /* STCMaterialTabsPVC.swift in Sources */,
 				97400C5E237406AD00514FBE /* KPageViewController.swift in Sources */,
+				970261D4237951E700C7A2D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
