@@ -1,23 +1,28 @@
 PODS:
-  - MaterialComponents/AnimationTiming (93.3.0)
-  - MaterialComponents/Elevation (93.3.0):
+  - MaterialComponents/AnimationTiming (118.0.0)
+  - MaterialComponents/Availability (118.0.0)
+  - MaterialComponents/Elevation (118.0.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (93.3.0):
+  - MaterialComponents/Ink (118.0.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Palettes (93.3.0)
-  - MaterialComponents/private/Application (93.3.0)
-  - MaterialComponents/private/Color (93.3.0)
-  - MaterialComponents/private/Math (93.3.0)
-  - MaterialComponents/Ripple (93.3.0):
+  - MaterialComponents/Palettes (118.0.0)
+  - MaterialComponents/private/Application (118.0.0)
+  - MaterialComponents/private/Color (118.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (118.0.0)
+  - MaterialComponents/Ripple (118.0.0):
     - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (93.3.0)
-  - MaterialComponents/ShadowLayer (93.3.0):
+  - MaterialComponents/ShadowElevations (118.0.0)
+  - MaterialComponents/ShadowLayer (118.0.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Tabs (93.3.0):
+  - MaterialComponents/Tabs (118.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
@@ -28,10 +33,12 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/Typography (93.3.0):
+  - MaterialComponents/Typography (118.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
+    - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
 
 DEPENDENCIES:
   - MaterialComponents/Tabs
@@ -40,11 +47,13 @@ SPEC REPOS:
   trunk:
     - MaterialComponents
     - MDFInternationalization
+    - MDFTextAccessibility
 
 SPEC CHECKSUMS:
-  MaterialComponents: 6b2eb24aa0c1d1a6453f05a6bbe3ed6c80843161
+  MaterialComponents: 333a09d55de4bc53e0e2e08f178c6f29cfe8645f
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
 PODFILE CHECKSUM: 5ba855dd328d27a737a4f8d2721d62680c238fb3
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
