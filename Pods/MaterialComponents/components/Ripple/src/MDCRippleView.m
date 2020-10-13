@@ -15,7 +15,8 @@
 #import "MDCRippleView.h"
 #import "private/MDCRippleLayer.h"
 
-#import "MaterialMath.h"
+#import "MaterialAvailability.h"
+#import "MDCRippleViewDelegate.h"
 
 @interface MDCRippleView () <CALayerDelegate, MDCRippleLayerDelegate>
 
@@ -33,7 +34,7 @@
 
 @end
 
-static const CGFloat kRippleDefaultAlpha = (CGFloat)0.16;
+static const CGFloat kRippleDefaultAlpha = (CGFloat)0.12;
 static const CGFloat kRippleFadeOutDelay = (CGFloat)0.15;
 
 @implementation MDCRippleView
@@ -57,6 +58,7 @@ static const CGFloat kRippleFadeOutDelay = (CGFloat)0.15;
 }
 
 - (void)commonMDCRippleViewInit {
+  _usesSuperviewShadowLayerAsMask = YES;
   self.userInteractionEnabled = NO;
   self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 
@@ -101,10 +103,18 @@ static const CGFloat kRippleFadeOutDelay = (CGFloat)0.15;
   [self updateRippleStyle];
 }
 
+- (void)setUsesSuperviewShadowLayerAsMask:(BOOL)usesSuperviewShadowLayerAsMask {
+  _usesSuperviewShadowLayerAsMask = usesSuperviewShadowLayerAsMask;
+
+  if (_usesSuperviewShadowLayerAsMask) {
+    [self setNeedsLayout];
+  }
+}
+
 - (void)updateRippleStyle {
   self.layer.masksToBounds = (self.rippleStyle == MDCRippleStyleBounded);
   if (self.rippleStyle == MDCRippleStyleBounded) {
-    if (self.superview.layer.shadowPath) {
+    if (self.usesSuperviewShadowLayerAsMask && self.superview.layer.shadowPath) {
       if (!self.maskLayer) {
         // Use mask layer when the superview has a shadowPath.
         self.maskLayer = [CAShapeLayer layer];
@@ -178,23 +188,27 @@ static const CGFloat kRippleFadeOutDelay = (CGFloat)0.15;
   self.activeRippleColor = self.rippleColor;
 }
 
+- (void)setColorForRippleLayer:(MDCRippleLayer *)rippleLayer {
+#if MDC_AVAILABLE_SDK_IOS(13_0)
+  if (@available(iOS 13.0, *)) {
+    if ([self.traitCollection respondsToSelector:@selector(performAsCurrentTraitCollection:)]) {
+      [self.traitCollection performAsCurrentTraitCollection:^{
+        rippleLayer.fillColor = self.rippleColor.CGColor;
+      }];
+      return;
+    }
+  }
+#endif  // MDC_AVAILABLE_SDK_IOS(13_0)
+  rippleLayer.fillColor = self.rippleColor.CGColor;
+}
+
 - (void)beginRippleTouchDownAtPoint:(CGPoint)point
                            animated:(BOOL)animated
                          completion:(nullable MDCRippleCompletionBlock)completion {
   MDCRippleLayer *rippleLayer = [MDCRippleLayer layer];
   rippleLayer.rippleLayerDelegate = self;
   [self updateRippleStyle];
-#if defined(__IPHONE_13_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0)
-  if (@available(iOS 13.0, *)) {
-    [self.traitCollection performAsCurrentTraitCollection:^{
-      rippleLayer.fillColor = self.rippleColor.CGColor;
-    }];
-  } else {
-    rippleLayer.fillColor = self.rippleColor.CGColor;
-  }
-#else
-  rippleLayer.fillColor = self.rippleColor.CGColor;
-#endif
+  [self setColorForRippleLayer:rippleLayer];
   rippleLayer.frame = self.bounds;
   if (self.rippleStyle == MDCRippleStyleUnbounded) {
     rippleLayer.maximumRadius = self.maximumRadius;
@@ -287,6 +301,22 @@ static const CGFloat kRippleFadeOutDelay = (CGFloat)0.15;
     return pendingAnim;
   }
   return nil;
+}
+
+#pragma mark - Convenience API
+
++ (MDCRippleView *)injectedRippleViewForView:(UIView *)view {
+  for (MDCRippleView *subview in view.subviews) {
+    if ([subview isKindOfClass:[MDCRippleView class]]) {
+      return subview;
+    }
+  }
+
+  MDCRippleView *newRippleView = [[MDCRippleView alloc] initWithFrame:view.bounds];
+  newRippleView.autoresizingMask =
+      UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+  [view addSubview:newRippleView];
+  return newRippleView;
 }
 
 @end

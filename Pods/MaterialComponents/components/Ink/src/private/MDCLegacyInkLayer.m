@@ -17,6 +17,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MaterialAvailability.h"
+#import "MDCLegacyInkLayerDelegate.h"
+
 static inline CGPoint MDCLegacyInkLayerInterpolatePoint(CGPoint start,
                                                         CGPoint end,
                                                         CGFloat offsetPercent) {
@@ -75,10 +78,10 @@ typedef NS_ENUM(NSInteger, MDCInkRippleState) {
   kInkRippleCancelled,
 };
 
-#if defined(__IPHONE_10_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0)
+#if MDC_AVAILABLE_SDK_IOS(10_0)
 @interface MDCLegacyInkLayerRipple () <CAAnimationDelegate>
 @end
-#endif
+#endif  // MDC_AVAILABLE_SDK_IOS(10_0)
 
 @interface MDCLegacyInkLayerRipple ()
 
